@@ -1,0 +1,316 @@
+@CHARSET "UTF-8";
+body{
+	font-family:cursive;/*Tahoma,"Trebuchet MS","Nimbus Sans L",Arial,"Franklin Gothic Medium","Helvetica Neue",Geneva,Verdana,"URW Gothic L","Gill Sans",Helvetica,"Lucida Sans Unicode","Arial Black","Lucida Grande","Microsoft Sans Serif",sans-serif;*/	
+	font-size: normal;
+	padding: 0; margin: 0; outline: 0;
+	background-image:url(../image/Fond7.jpg);
+}
+h2{font-size:1em;display:inline;}
+
+a{text-decoration:none;}
+
+#trivia {
+	color:white;
+	text-decoration:underline;
+}
+
+#notifPartie, #notifScore, #notifPoint, a.reponse, #domain, #changeLog, #addQuestion, #checkQuestion, #backGame {
+	color:white;
+}
+
+a.textProblem {
+	color:yellow;
+}
+
+#question {
+	color:red;
+}
+
+#divMessage{margin:0 15px 0 0;}
+
+#titre{
+	float:left; padding-right:75px;
+}
+ul{list-style-type:none}
+
+#menu ul{
+	float:left;
+	width:200px;
+	border-radius:9px;
+	background-color:rgb(210,210,210);
+}
+
+#menu ul li{
+	float:left;
+	margin:15px 15px 0 0;
+	
+	height:30px;
+	height-line:30px;
+}
+
+#menu ul{
+	margin:15px;
+	padding:10px;
+}
+
+#menu ul li:nth-child(odd){
+	width:70px;
+}
+
+#menu ul li:nth-child(odd){
+	width:125px;
+}
+
+.clear{
+	clear:left;
+}
+
+.vrai{color:green;}
+.false{color:red;}
+
+.ui-progressbar {
+    position: relative;
+  }
+  .progress-label {
+    position: absolute;
+    left: 50%;
+    top: 4px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
+  }
+  
+#contain{
+	height:100%;
+	width:800px;
+	margin:0 auto;
+	
+}  
+
+/****************
+	Login
+****************/
+
+#frmlog, #frmAdd{
+	border:7px solid rgb(240,240,210);
+	border-radius:7px;
+	padding:15px;
+	background-image:url(../image/Fond8.png);
+}
+
+#frmlog label, #frmAdd label{
+	width:110px;
+	display:block;
+	float:left;
+}
+
+#linkRegister, #connect{margin-left:70px;}
+
+#frmlog #login, #frmlog #password, #frmAdd #nom, #frmAdd #prenom, #frmAdd #mail, #frmAdd #login, #frmAdd #password, #frmAdd #idMonde{width:150px;}
+
+legend{
+	border:none;
+}
+  
+#containLogin{
+	padding:250px 0 0 0;
+	height:200px;
+	width:300px;
+	margin:0 auto;
+}
+
+#login, #password {
+	border-radius:4px;
+}
+
+/****************
+	Partie
+****************/
+#reception .suggest:first-child{color:green;}
+
+#escape{
+	height:100px;
+	width:250px;
+	margin:100px 0 50px 375px;
+	color:white;
+}
+
+#part{
+	width:400px;
+	margin:0 auto;
+	padding-top:50px;
+	float:left;
+	/*color:rgb(99, 206, 231);*/
+	color:rgb(255, 255, 255);
+}
+
+#infoPartie {
+	color:white;
+}
+
+#infoPartie legend{
+	font-style:italic;
+	text-decoration:underline;
+}
+
+#btUpdateLog, #btInsertQuestion, #btlogin, #linkRegister {
+	background-image:url(../image/Fond8.png);
+	border-radius:5px;
+}
+
+#stat {
+	padding:0 0 0 100px;	
+	width:300px;
+	float:left;
+	color:white;
+}
+
+#stat h3 {
+	text-decoration:underline;
+}
+
+#linkAddPartie {
+	color:red;
+	text-decoration:underline;
+}
+
+#libelle, #reponse1, #reponse2, #reponse3, #reponse4, #iddomaine {
+	border-radius:4px;
+}
+
+a.partie {
+	color:red;
+}
+
+a.partFinished {
+	color:red;
+}
+
+#logout, a.profil {
+	color:rgb(21,200,21);
+}
+
+progress {
+  display: block;
+  height: 20px;
+  margin: .5em 0;
+  border: 3px solid white;
+  border-radius: 5px;
+  background-color: #d4d4d4;
+  box-shadow: 0 0 0 3px #b6b6b6;
+}
+
+@-webkit-keyframes progress {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+@-moz-keyframes progress {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+@keyframes progress {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+progress::-webkit-progress-bar {
+  border-radius: 5px;
+  background-color: #d4d4d4;
+}
+progress::-webkit-progress-value {
+  border-radius: 5px;
+  background-color: #a5d62f;
+  background-image: -webkit-linear-gradient(-45deg, transparent 25%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0.3));
+  background-image: linear-gradient(-45deg, transparent 25%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0.3));
+  background-size: 40px 40px;
+  -webkit-animation: progress 8s linear infinite;
+  animation: progress 8s linear infinite;
+}
+progress::-moz-progress-bar {
+  border-radius: 5px;
+  background-color: #a5d62f;
+  background-image: linear-gradient(-45deg, transparent 25%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0.3));
+  background-size: 40px 40px;
+  -moz-animation: progress 8s linear infinite;
+  animation: progress 8s linear infinite;
+}
+
+/****************
+	Domaine
+****************/
+.nextQuestion{
+	color:white;
+	width:160px;
+	margin:0 auto;
+}
+
+/****************
+	Domaine/view notif
+****************/
+
+#notifPartie, #notifScore, #notifPoint{
+	width:120px;
+	float:left;
+}
+
+#containNotif{
+	width:360px;
+	margin:0 auto;
+}
+
+/****************
+	Question
+****************/
+/*#frmSignal #libelle{display:none;}*/
+
+#question{
+	padding:100px 0 0 100px;
+}
+
+#question h1{
+	font-size:1.4em;
+}	
+
+#laQuestion{
+	color:rgb(29,226,58);
+}
+
+.textProblem, .reponse{
+	color:rgb(166,166,166);
+}
+
+#answer, .t, .createGame, #sp{
+	display:none;
+}
+
+/****************
+	Couronne
+****************/
+
+#linkCouronneQuestion{
+	color:white;
+}
+
+.imgDomaine img:hover{
+	border:2px solid red;	
+	border-radius:7px;
+	height:130px;
+	width:130px;
+}
+
+imgDomaine img:focus{
+	border:2px solid red;	
+	border-radius:7px;
+	height:130px;
+	width:130px;
+}

@@ -1,0 +1,13 @@
+RewriteEngine On 
+
+#url de base
+RewriteBase /trivia/ 
+
+#si fichier n'existe pas
+RewriteCond %{REQUEST_FILENAME} !-f 
+
+#si ne contient pas image
+RewriteCond %{HTTP_ACCEPT} !(.*images.*)
+
+#Redirige vers cette page
+RewriteRule ^(.*)$ MainController.php?c=$1 [L] 
